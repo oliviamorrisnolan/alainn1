@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Delivery - Álainn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Your custom styles -->
+    <script src="stock-script.js" defer></script> <!-- JavaScript for dynamic category and ingredient handling -->
+</head>
+<body>
+    <!-- Brand Title -->
+    <div id="brand">Álainn</div>
+
+    <!-- Add Delivery Form Section -->
+    <div id="addDeliveryCard">
+        <h2>Add Delivery</h2>
+        
+        <form id="addDeliveryForm">
+            <!-- Category Selection -->
+            <div class="card-field">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="sorbets">Sorbets</option>
+                    <option value="overnight-oats">Overnight Oats</option>
+                </select>
+            </div>
+
+            <!-- Ingredient Selection (Dynamic) -->
+            <div id="ingredient-options" style="display:none;">
+                <div class="card-field">
+                    <label for="ingredient">Ingredient:</label>
+                    <select id="ingredient" name="ingredient" required>
+                        <option value="">Select Ingredient</option>
+                        <!-- Options will be populated dynamically based on the selected category -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Delivery Date -->
+            <div class="card-field">
+                <label for="deliveryDate">Date of Delivery:</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+            </div>
+
+            <!-- Batch Code -->
+            <div class="card-field">
+                <label for="batchCode">Batch Code:</label>
+                <input type="text" id="batchCode" name="batchCode" required>
+            </div>
+
+            <!-- Use By Date -->
+            <div class="card-field">
+                <label for="useBy">Use By Date:</label>
+                <input type="date" id="useBy" name="useBy" required>
+            </div>
+
+            <!-- Quantity -->
+            <div class="card-field">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <!-- Back Link -->
+    <a href="index.html" id="back-link">← Back to Main Menu</a>
+
+    <script src="stock-script.js"></script> <!-- This will include the JavaScript file for handling dynamic elements -->
+</body>
+</html>

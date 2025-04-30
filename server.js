@@ -10,6 +10,8 @@ const port = 3000;
 
 // Enable CORS for all routes
 app.use(cors());
+const cors = require('cors');
+app.use(cors());
 
 // Middleware to parse JSON data in POST request bodies
 app.use(bodyParser.json());

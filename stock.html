@@ -1,15 +1,26 @@
-#!/usr/bin/env python3
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stock - Álainn</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Stock Management - Álainn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stock-style.css">
 </head>
 <body>
-    <h1>Stock</h1>
-    <p>View and manage your current stock levels here.</p>
+    <div id="brand">Álainn</div>
 
-    <a href="index.html">← Back to Main Menu</a>
+    <div id="menu">
+        <a href="ingredients.html" class="card">
+            <h2>Ingredients</h2>
+            <p>Manage ingredient stock levels</p>
+        </a>
+        <a href="non-food-items.html" class="card">
+            <h2>Non-Food Items</h2>
+            <p>Manage non-food item stock levels</p>
+        </a>
+    </div>
+
+    <a href="index.html" id="back-link">← Back to Main Menu</a>
 </body>
 </html>
